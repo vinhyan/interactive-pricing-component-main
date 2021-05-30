@@ -25,7 +25,7 @@ body {
     flex-direction: column;
     justify-content: center;
     line-height: 1rem;
-    background-image: url(/sources/images/pattern-circles.svg);
+    background-image: url(../images/pattern-circles.svg);
     background-repeat: no-repeat;
     background-position: center;
 
@@ -100,7 +100,7 @@ body {
     height: 25px;
     border-radius: 30px;
     background-color: rgb(64, 224, 208);
-    background-image: url(/sources/images/icon-slider.svg);
+    background-image: url(../images/icon-slider.svg);
     background-size: 15px;
     background-repeat: no-repeat;
     background-position: center;
