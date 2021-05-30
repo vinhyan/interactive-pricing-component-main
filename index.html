@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./sources/style/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Interactive pricing component</title>
 
@@ -17,33 +17,40 @@
 </head>
 <body>
   <section class="banner">
-      <h1>
-        Simple, traffic-based pricing
-      </h1>
-      <p>Sign-up for our 30-day trial.</p> 
-      <p>No credit card required.</p>
-  </section>
-  <section class="content container">
-      <p class="pageviews"><span class="views"></span>Pageviews</p>
-      <div class="slidebar">
-        <input type="range" min="0" max="4" value="1" class="slider">
-        <!--<div class=slide-button>
-          <div class="slide-icon"></div>
-        </div>-->
+      <h1>Simple, traffic-based pricing</h1>
+      <div class="description">
+        <p>Sign-up for our 30-day trial.</p> 
+        <p>No credit card required.</p> 
       </div>
-      <span><span class="cost">$</span>/month</span>
+  </section>
+
+  <section class="container top">
+    <div class="views-price">
+      <span class="pageviews"><span class="views">10K</span>pageviews</span>
+  
+      <input class="slider" type="range" min="0" max="4" value="0" >
+
+      <span class="cost-wrap"><span class="cost">$8.00</span>/ month</span>
       
-      <div class="duration">
+    </div>
+
+    <div class="duration">
+      <div class="monthly">
         <span>Monthly Billing</span>
         <label class="switch">
           <input type="checkbox">
           <span class="toggle"></span>
         </label>
-        <span>Yearly Billing</span><span class="discount">-25%</span>
       </div>
-    </section>
+
+      <div class="yearly">
+        <span class='yearly-billing'>Yearly Billing<span class="discount">-25%</span><span class="discount-desktop">25% discount</span></span>
+      </div>
+
+    </div>
+  </section>
       
-  <section class="call-for-action container">
+  <section class="container bottom">
     <ul class="benefit">
       <li><img class="check" src="sources/images/icon-check.svg"> Unlimited websites</li>
       <li><img class="check" src="sources/images/icon-check.svg"> 100% data ownership</li>
@@ -54,10 +61,12 @@
   </section>
   
     
-    <div class="attribution">
+  <section class="attribution">
+    <div>
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Vinh Nhan</a>.
     </div>
+  </section>
   <script src="/sources/app/app.js"></script>
 </body>
 </html>
