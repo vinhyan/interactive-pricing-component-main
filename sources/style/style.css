@@ -139,7 +139,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: baseline;
-    margin-top: 10px;
+    margin-top: 30px;
 
 }
 
@@ -342,12 +342,23 @@ input:checked + .toggle:before {
 
     .views-price {
         flex-direction: row;
+        height: 10vh;
         position: relative;
+        align-items: center;
     }
 
     .slider {
         position: absolute;
-        top: 55%;
+        bottom: -10%;
+        
+    }
+
+    .monthly {
+        padding: 10px 0;
+    }
+
+    .yearly {
+        padding: 10px 0;
     }
 
     .discount {
