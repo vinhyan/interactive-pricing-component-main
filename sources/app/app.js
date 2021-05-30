@@ -1,4 +1,3 @@
-
 const views = document.querySelector('.views');
 const slider = document.querySelector('.slider');
 const pageviews = [10000, 50000, 100000, 500000, 1000000];
@@ -26,7 +25,7 @@ const currencyFormatter = new Intl.NumberFormat('en-US', {
 
 
 const app = () => {
-    
+
     // Pageviews and Price range
 
     slider.addEventListener('input', (e) => {
