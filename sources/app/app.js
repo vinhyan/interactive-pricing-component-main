@@ -104,13 +104,13 @@ const app = () => {
 
             noDiscountCost.style.display = "initial";
             cost.style.display = "none";
-
             showViewsPrice(monthlyPriceArr, noDiscountCost);
 
         } else {
-            showViewsPrice(yearlyPriceArr);
             noDiscountCost.style.display = "none";
             cost.style.display = "initial";
+            showViewsPrice(yearlyPriceArr, cost);
+            
         }
 
     });
