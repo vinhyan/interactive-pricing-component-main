@@ -93,7 +93,7 @@ const app = () => {
 
     // Toggle Monthly billing price (without discount):
 
-    toggleBtn.addEventListener('change', (e) => {
+    toggleBtn.addEventListener('change', () => {
      
         yearlyBilling.classList.toggle("toggle-discount");
 
@@ -109,6 +109,7 @@ const app = () => {
         } else {
             noDiscountCost.style.display = "none";
             cost.style.display = "initial";
+
             showViewsPrice(yearlyPriceArr, cost);
             
         }
